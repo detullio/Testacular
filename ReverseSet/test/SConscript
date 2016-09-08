@@ -1,0 +1,4 @@
+headers = Glob('*.{h}')
+sources = Glob('*.c')
+               
+Library('test', sources)

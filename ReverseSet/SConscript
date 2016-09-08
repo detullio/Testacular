@@ -1,0 +1,8 @@
+headers = Glob('*.{h}')
+sources = Glob('*.c')
+
+testObject = SConscript('test/SConscript')
+               
+Library('ReverseSet', sources)
+
+#program(test, testObject, archiveFile)
